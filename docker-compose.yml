@@ -1,0 +1,10 @@
+version: "2"
+services: 
+   openresty:
+      image: openresty:test
+      ports: 
+        - 8082:8080
+      expose:
+        - 8080
+      volumes:
+        - /vboxshare/server_data/openresty:/data
